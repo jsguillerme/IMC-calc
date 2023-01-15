@@ -35,13 +35,13 @@ function calculoIMC() {
         formatMessage('Você está no sobrepeso, cuidado!', 'alert-warning')
 
     } else if ( resultIMC > 29.9 && resultIMC <= 34.9) {
-        formatMessage('Você com obesidade grau 1, está na hora de se cuidar!', 'alert-danger')
+        formatMessage('Você está com obesidade grau 1, está na hora de se cuidar!', 'alert-danger')
 
     } else if ( resultIMC > 34.9 && resultIMC <= 39.9) {
-        formatMessage('Você com obesidade grau 2, está na hora de se cuidar!', 'alert-danger')
+        formatMessage('Você está com obesidade grau 2, está na hora de se cuidar!', 'alert-danger')
 
     } else {
-        formatMessage('Você com obesidade grau 3, está na hora de se cuidar!', 'alert-danger')
+        formatMessage('Você está com obesidade grau 3, está na hora de se cuidar!', 'alert-danger')
 
     }
 }
@@ -52,10 +52,10 @@ function formatMessage(message, classe){
     erroAlerta.innerText = ' ';
         erroAlerta.innerText = message
         erroAlerta.classList.remove('visually-hidden')
-        erroAlerta.classList.replace('alert-danger' , classe)
+        erroAlerta.classList.replace('alert-success' , classe)
 
         setTimeout(() => {
             erroAlerta.classList.add('visually-hidden')
-            erroAlerta.classList.replace(classe , 'alert-danger')
+            erroAlerta.classList.replace(classe , 'alert-success')
         }, 3000)
 }

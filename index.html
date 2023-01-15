@@ -17,20 +17,20 @@
     <main>
         <section class="container mt-5">
             <section class="row justify-content-center">
-                <span class="text-center fs-4 mb-3 fw-bold text-danger">
+                <span class="text-center fs-4 mb-3 fw-bold text-success">
                     CALCULADORA IMC
                 </span>
                 <form class="w-100 mb-5" autocomplete="off">
-                    <div class="form-floating mb-4 border border-danger rounded-2">
+                    <div class="form-floating mb-4 border border-success rounded-2">
                         <input type="text" class="form-control" id="inputPeso" placeholder="Peso">
                         <label for="inputPeso">Digite seu peso</label>
                     </div>
-                    <div class="form-floating mb-4 border border-danger rounded-2">
+                    <div class="form-floating mb-4 border border-success rounded-2">
                         <input type="text" class="form-control" id="inputAltura" placeholder="Altura">
                         <label for="inputAltura">Digite sua altura</label>
                     </div>
-                    <button type="submit" class="btn btn-danger w-100" onclick="calculoIMC()">Calcular IMC</button>
-                    <div class="alert alert-danger mt-4 visually-hidden text-center" id="alert-err" role="alert">
+                    <button type="button" class="btn btn-success w-100" onclick="calculoIMC()">Calcular IMC</button>
+                    <div class="alert alert-success mt-4 visually-hidden text-center" id="alert-err" role="alert">
                         Você não preencheu alguma informação acima!
                     </div>
                 </form>
@@ -38,10 +38,10 @@
                     <div class="card-body">
                         <section class="container m-2">
                             <div class="row justify-content-center">
-                                <span class="text-center fs-4 mb-2 fw-bold text-danger">TABELA BASE</span>
+                                <span class="text-center fs-4 mb-2 fw-bold text-success">TABELA BASE</span>
                                 <div class="col-10 w-100">
                                     <ul class="list-group mb-4">
-                                        <li class="list-group-item list-group-item-danger text-center">
+                                        <li class="list-group-item list-group-item-success text-center">
                                             IMC
                                         </li>
                                         <li class="list-group-item">
@@ -66,7 +66,7 @@
                                 </div>
                                 <div class="col w-100">
                                     <ul class="list-group" id="resultados">
-                                        <li class="list-group-item list-group-item-danger text-center">
+                                        <li class="list-group-item list-group-item-success text-center">
                                             RESULTADO
                                         </li>
                                         <li class="list-group-item">
