@@ -20,7 +20,7 @@
                 <span class="text-center fs-4 mb-3 fw-bold text-success">
                     CALCULADORA IMC
                 </span>
-                <form class="w-100 mb-5" autocomplete="off">
+                <form class="w-100 mb-5" id="formMain" autocomplete="off">
                     <div class="form-floating mb-4 border border-success rounded-2">
                         <input type="text" class="form-control" id="inputPeso" placeholder="Peso">
                         <label for="inputPeso">Digite seu peso</label>
@@ -29,9 +29,9 @@
                         <input type="text" class="form-control" id="inputAltura" placeholder="Altura">
                         <label for="inputAltura">Digite sua altura</label>
                     </div>
-                    <button type="button" class="btn btn-success w-100" onclick="calculoIMC()">Calcular IMC</button>
+                    <button type="submit" class="btn btn-success w-100">Calcular IMC</button>
                     <div class="alert alert-success mt-4 visually-hidden text-center" id="alert-err" role="alert">
-                        Você não preencheu alguma informação acima!
+                        Ops!! Você deve ter esquecido de preencher alguma informação acima.
                     </div>
                 </form>
                 <div class="card">
